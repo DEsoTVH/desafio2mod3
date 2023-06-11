@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script defer src="./assets/js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg">
+    <div class="maincontainer">
+        <section class="challenge1">
+            <img src="assets/img/Steam_icon_logo.svg.png" id="clicker" alt="logo steam">
+        </section>
+        <section class="challenge2">
+            <h3>PICK YOUR VERSIONS:</h3>
+            <div class="cards">
+                <div class="game">
+                    <img src="assets/img/game1.png" alt="diablo 4">
+                    <p>DIABLO 4</p>
+                    <input id="diablo4" type="number" min="0" max="10" value="0">
+                </div>
+                <div class="game">
+                    <img src="assets/img/game2.png" alt="wow">
+                    <p>WORLD OF WARCRAFT</p>
+                    <input id="wow" type="number" min="0" max="10" value="0">
+                </div>
+                <div class="game">
+                    <img src="assets/img/game3.png" alt="starcraft">
+                    <p>STARCRAFT 2</p>
+                    <input id="starcraft" type="number" min="0" max="10" value="0">
+                </div>
+            </div>
+            <br>
+
+            <p id="checkresults"></p>
+            <button id="checkbtn">CHECK CART</button>
+
+        </section>
+
+        <section class="challenge3">
+            <h3>PASSWORD INPUT</h3>
+            <div class="password">
+                <select name="firstdig" id="firstdig">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="secdig" id="secdig">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="thirddig" id="thirddig">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <br>
+            <button id="loginbtn">SET</button>
+            <p id="loginresults"></p>
+        </section>
+    </div>
+    </div>
+</body>
+</html>
