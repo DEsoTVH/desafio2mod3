@@ -19,18 +19,35 @@ function calculate(){
     let wow = document.getElementById("wow").value;
     let starcraft = document.getElementById("starcraft").value;
     
-    let resultado = Number(diablo4) + Number(wow) + Number(starcraft);
+    let results = Number(diablo4) + Number(wow) + Number(starcraft);
     
-    if (resultado <= 10) {
+    if (results <= 10) {
         document.getElementById("checkresults").innerHTML=
-        "You have " + resultado + " codes"
-        resultado;
+        "You have " + results + " codes"
+        results;
        
     } else {
       document.getElementById("checkresults").innerHTML=
         "Thats way too much!";
     }
+}
+
+// Tercer challenge, consiste en generar respuestas para 2 dispocisiones de claves, 911 y 714. //
+    
+function passInput(){
+    let passinput1 = document.querySelector("#firstdig").value;
+    let passinput2 = document.querySelector("#secdig").value;
+    let passinput3 = document.querySelector("#thirddig").value;
+    
+    if (passinput1 === "9" && passinput2 === "1" && passinput3 ==="1") {
+      document.getElementById("loginresults").innerHTML=
+      "FIRST PASSWORD OK";
+    } else if (passinput1 === "7" && passinput2 === "1" && passinput3 ==="4"){
+      document.getElementById("loginresults").innerHTML=
+      "SECOND PASSWORD OK";
+    } else{
+      document.getElementById("loginresults").innerHTML=
+      "WRONG PASSWORD! TRY AGAIN!";
     }
     
-
-
+}
