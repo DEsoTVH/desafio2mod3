@@ -18,7 +18,14 @@ function calculate(){
     let diablo4 = document.getElementById("diablo4").value;
     let wow = document.getElementById("wow").value;
     let starcraft = document.getElementById("starcraft").value;
-    
+
+    //Validamos//
+    if (diablo4 < 0 || diablo4 > 10 || wow < 0 || wow > 10 || starcraft < 0 || starcraft > 10) {
+      document.getElementById("checkresults").innerHTML = "Invalid input! Please enter values between 0 and 10.";
+      return;
+  }    
+    //Validamos//
+
     let results = Number(diablo4) + Number(wow) + Number(starcraft);
     
     if (results <= 10) {
@@ -39,6 +46,13 @@ function passInput(){
     let passinput2 = document.querySelector("#secdig").value;
     let passinput3 = document.querySelector("#thirddig").value;
     
+    //Validamos//
+    if (!passinput1 || !passinput2 || !passinput3) {
+      document.getElementById("loginresults").innerHTML = "Invalid input! Please select all digits.";
+      return;
+    }
+    //Validamos//
+    
     if (passinput1 === "9" && passinput2 === "1" && passinput3 ==="1") {
       document.getElementById("loginresults").innerHTML=
       "FIRST PASSWORD OK";
@@ -48,6 +62,6 @@ function passInput(){
     } else{
       document.getElementById("loginresults").innerHTML=
       "WRONG PASSWORD! TRY AGAIN!";
-    }
-    
+    }   
 }
+
